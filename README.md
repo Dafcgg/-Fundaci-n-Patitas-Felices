@@ -248,16 +248,6 @@ patitas-felices/
 
 │
 
-├── assets/
-
-│   ├── images/
-
-│   ├── icons/
-
-│   └── logo/
-
-│
-
 └── README.md
 
 ```
