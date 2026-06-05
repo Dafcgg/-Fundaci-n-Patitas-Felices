@@ -101,7 +101,7 @@
     font-size: 1.1rem;
     font-weight: bold;
     color: white;
-    background:  #FF9F1C;
+    background: linear-gradient(135deg, #FF9F1C, #ff5400);
     padding: 14px 35px;
     border-radius: 3rem;
     transition: 0.3s;
@@ -109,7 +109,7 @@
 }
 
 .btn:hover{
-    background: #ff9500;
+    background: linear-gradient(135deg, #ffb347, #ff3c00);
 }
 .resumen{
     padding: 80px 10%;
@@ -420,6 +420,45 @@ img {
     bottom: 15px;
 }
 
+.impacto{
+    padding: 80px 10%;
+    background: white;
+    text-align: center;
+}
+
+.impacto h2{
+    color: #1E3A5F;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.estadisticas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 25px;
+}
+
+.dato{
+    background: #fff8ef;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(255,159,28,.25);
+    transition: .3s;
+}
+
+.dato:hover{
+    transform: translateY(-8px);
+}
+
+.dato h3{
+    color: #FF9F1C;
+    font-size: 2.5rem;
+}
+
+.dato p{
+    margin-top: 10px;
+    color: #555;
+}
 
 
 footer{
@@ -445,6 +484,7 @@ footer{
     color: #FFB347;
     text-align: center;
 }
+
 .footer-container h2:hover{
     transform: scale(1.2);
 }
@@ -462,13 +502,11 @@ footer{
     margin-bottom: 15px;
     transition: .3s;
     text-align: center;
-    font-size: 1.1rem;
 }
 
 .footer-links a:hover{
     color: #FFB347;
     transform: translateX(5px);
-
 }
 
 .footer-contacto p{
@@ -528,8 +566,8 @@ footer{
 }
 
 .catalogo-titulo p{
-    font-size: 1.1rem;
     color: #666;
+    font-size: 1.1rem;
 }
 
 .estado{
@@ -543,11 +581,11 @@ footer{
 }
 
 .disponible{
-    background: hsl(134, 61%, 41%, 0.8);
+    background: #28a745;
 }
 
 .adoptado{
-    background: hsla(354, 70%, 54%, 0.8);
+    background: #dc3545;
 }
 
 .banner-contacto {
@@ -560,8 +598,6 @@ footer{
 .banner-contacto h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #FFB347;
-
 }
 
 .banner-contacto p {
@@ -663,6 +699,25 @@ footer{
     box-shadow: 0 0 10px rgba(255,159,28,0.3);
 }
 
+input:required:placeholder-shown,
+textarea:required:placeholder-shown,
+select:required:invalid{
+    border: 2px solid #dc3545;
+}
+
+input:valid,
+textarea:valid,
+select:valid{
+    border: 2px solid #28a745;
+}
+
+.error{
+    border:2px solid #dc3545 !important;
+}
+
+.success{
+    border:2px solid #28a745 !important;
+}
 .contact-form .btn {
     width: 100%;
     border: none;
@@ -771,7 +826,6 @@ a svg{
 .banner-nosotros h1 {
     font-size: 3rem;
     margin-bottom: 15px;
-    color: #FFB347;
 }
 
 .banner-nosotros p {
@@ -903,6 +957,102 @@ a svg{
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
+}
+.adopcion h2{
+    color: #1E3A5F;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.adopcion{
+    padding: 80px 10%;
+    background: #fff8ef;
+    text-align: center;
+}
+
+.pasos-adopcion{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.paso{
+    flex: 1;
+    min-width: 220px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+.paso:hover{
+    transform: translateY(-10px);
+}
+.paso h3{
+    color: #ffb347;
+}
+.paso p{
+    font-size: 1.1rem;
+    max-width: 900px;
+}
+
+.perfil-animal{
+    display:flex;
+    gap:50px;
+    padding:80px 10%;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.perfil-img{
+    flex:1;
+    min-width:350px;
+}
+
+.perfil-img img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.info-animal{
+    flex:1;
+    min-width:350px;
+}
+
+.info-animal h1{
+    color:#1E3A5F;
+    margin:20px 0;
+    font-size:3rem;
+}
+
+.info-animal p{
+    line-height:1.8;
+    margin-bottom:25px;
+    font-size: 1.1rem;
+    max-width: 900px;
+}
+
+.caracteristicas{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.caracteristica{
+    background:#fff8ef;
+    padding:15px;
+    border-radius:12px;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+.caracteristica strong{
+    color:  #ffb347;
+}
+.caracteristica:hover{
+    transform: translateY(-5px);
+    background:#eff6ff;
 }
 
 
